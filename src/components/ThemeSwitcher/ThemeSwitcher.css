@@ -1,0 +1,75 @@
+.switcher {
+  align-items: flex-end;
+  display: flex;
+}
+
+.switcher__title,
+.switcher__number {
+  color: var(--text-color);
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 13px;
+}
+
+.switcher__title {
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+.switcher__options,
+.switcher__option {
+  display: flex;
+}
+
+.switcher__options {
+  position: relative;
+}
+
+.switcher__option {
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  outline: none;
+}
+
+.switcher__number {
+  padding-bottom: 6px;
+}
+
+.switcher__toggle {
+  background: var(--calculator-background);
+  height: 26px;
+  width: 26px;
+}
+
+.switcher__option:first-of-type .switcher__toggle {
+  border-radius: 12px 0 0 12px;
+}
+
+.switcher__option:last-of-type .switcher__toggle {
+  border-radius: 0 12px 12px 0;
+}
+
+.switcher__selected {
+  border-radius: 16px;
+  background: var(--secondary-button);
+  bottom: 5px;
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  transition: left 0.25s ease-in-out;
+}
+
+.switcher__selected--gray {
+  left: 5px;
+}
+
+.switcher__selected--light {
+  left: 28px;
+}
+
+.switcher__selected--purple {
+  left: 50px;
+}

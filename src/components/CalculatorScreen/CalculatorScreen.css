@@ -1,0 +1,19 @@
+.screen {
+  align-items: center;
+  background: var(--screen-background);
+  border-radius: 10px;
+  display: flex;
+  padding: 38px 32px;
+  width: 100%;
+}
+
+.screen__input {
+  background: none;
+  color: var(--screen-text);
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 54px;
+  letter-spacing: -0.8px;
+  text-align: right;
+  width: 100%;
+}

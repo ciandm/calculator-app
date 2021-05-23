@@ -1,0 +1,81 @@
+.theme-gray {
+  --background-color: #3a4663;
+  /* primary button */
+  --primary-button: #647198;
+  --primary-button-shadow: #414e73;
+  /* secondary button */
+  --secondary-button: #d03f2f;
+  --secondary-button-shadow: #93261a;
+  --secondary-button-text: #ffffff;
+  /* calculator button */
+  --calculator-button: #eae3dc;
+  --calculator-button-shadow: #b3a497;
+  --calculator-button-text: #434a59;
+  /* screen */
+  --screen-background: #181f33;
+  --screen-text: #fff;
+  /* calculator body */
+  --calculator-background: #242d44;
+  /* other colours */
+  --text-color: #fff;
+  --toggle-color: #d03f2f;
+}
+
+.theme-light {
+  --background-color: #e6e6e6;
+  /* primary button */
+  --primary-button: #378187;
+  --primary-button-shadow: #1b6066;
+  /* secondary button */
+  --secondary-button: #c85402;
+  --secondary-button-shadow: #873901;
+  --secondary-button-text: #ffffff;
+  /* calculator button */
+  --calculator-button: #e5e4e1;
+  --calculator-button-shadow: #a79e91;
+  --calculator-button-text: #36362c;
+  /* screen */
+  --screen-background: #eeeeee;
+  --screen-text: #36362c;
+  /* calculator body */
+  --calculator-background: #d2cdcd;
+  /* other colours */
+  --text-color: #36362c;
+  --toggle-color: #c85402;
+}
+
+.theme-purple {
+  --background-color: #17062a;
+  /* primary button */
+  --primary-button: #56077c;
+  --primary-button-shadow: #be15f4;
+  /* secondary button */
+  --secondary-button: #00ded0;
+  --secondary-button-shadow: #6cf9f1;
+  --secondary-button-text: #1a2327;
+  /* calculator button */
+  --calculator-button: #331c4d;
+  --calculator-button-shadow: #881c9e;
+  --calculator-button-text: #ffe53d;
+  /* screen */
+  --screen-background: #1e0936;
+  --screen-text: #ffe53d;
+  /* calculator body */
+  --calculator-background: #1e0936;
+  /* other colours */
+  --text-color: #ffe53d;
+  --toggle-color: #00ded0;
+}
+
+*,
+*::before,
+*::after {
+  background: var(--background-color);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+}

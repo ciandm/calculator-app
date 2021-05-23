@@ -1,0 +1,11 @@
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 32px;
+}
+
+.header__title {
+  color: var(--text-color);
+  text-transform: lowercase;
+}
