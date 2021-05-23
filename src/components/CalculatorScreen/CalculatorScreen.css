@@ -3,6 +3,7 @@
   background: var(--screen-background);
   border-radius: 10px;
   display: flex;
+  margin-bottom: 24px;
   padding: 38px 32px;
   width: 100%;
 }

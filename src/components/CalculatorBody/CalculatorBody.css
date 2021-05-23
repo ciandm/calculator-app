@@ -1,0 +1,15 @@
+.body {
+  background: var(--calculator-background);
+  border-radius: 10px;
+  display: grid;
+  gap: 24px;
+  grid-template-areas:
+    "seven eight nine del"
+    "four five six plus"
+    "one two three minus"
+    "dot zero divide multiply"
+    "reset reset equal equal";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 64px);
+  padding: 32px;
+}

@@ -1,0 +1,127 @@
+.button {
+  align-items: center;
+  background: var(--calculator-button);
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 0px -4px 0px var(--calculator-button-shadow);
+  color: var(--calculator-button-text);
+  cursor: pointer;
+  display: flex;
+  font-weight: bold;
+  height: 100%;
+  justify-content: center;
+  outline: none;
+  width: 100%;
+}
+
+.button--1,
+.button--2,
+.button--3,
+.button--4,
+.button--5,
+.button--6,
+.button--7,
+.button--8,
+.button--9,
+.button--0,
+.button--plus,
+.button--multiply,
+.button--minus,
+.button--divide,
+.button--dot {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.button--reset,
+.button--equal,
+.button--del {
+  color: #fff;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -0.333333px;
+  text-transform: uppercase;
+}
+
+.button--reset,
+.button--del {
+  background: var(--primary-button);
+  box-shadow: inset 0px -4px 0px var(--primary-button-shadow);
+}
+
+.button--equal {
+  background: var(--secondary-button);
+  box-shadow: inset 0px -4px 0px var(--secondary-button-shadow);
+}
+
+.button--1 {
+  grid-area: one;
+}
+
+.button--2 {
+  grid-area: two;
+}
+
+.button--3 {
+  grid-area: three;
+}
+
+.button--4 {
+  grid-area: four;
+}
+
+.button--5 {
+  grid-area: five;
+}
+
+.button--6 {
+  grid-area: six;
+}
+
+.button--7 {
+  grid-area: seven;
+}
+
+.button--8 {
+  grid-area: eight;
+}
+
+.button--9 {
+  grid-area: nine;
+}
+
+.button--del {
+  grid-area: del;
+}
+
+.button--dot {
+  grid-area: dot;
+}
+
+.button--reset {
+  grid-area: reset;
+}
+
+.button--equal {
+  grid-area: equal;
+}
+
+.button--plus {
+  grid-area: plus;
+}
+
+.button--minus {
+  grid-area: minus;
+}
+
+.button--multiply {
+  grid-area: multiply;
+}
+
+.button--divide {
+  grid-area: divide;
+}
+
+.button--0 {
+  grid-area: zero;
+}

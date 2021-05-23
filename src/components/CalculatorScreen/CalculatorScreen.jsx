@@ -1,10 +1,10 @@
 import React from 'react';
 import './CalculatorScreen.css';
 
-function CalculatorScreen() {
+function CalculatorScreen({ value }) {
   return (
     <div className="screen">
-      <div className="screen__input">399,551</div>
+      <div className="screen__input">{value || '0'}</div>
     </div>
   );
 }
