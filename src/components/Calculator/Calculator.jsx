@@ -9,12 +9,13 @@ import useCalculatorInput from '../hooks/useCalculatorInput';
 function Calculator() {
   const [state, dispatch] = useCalculatorInput();
 
-  const handleNumberAppend = operator => {
+  const handleButtonPress = (operator, type) => {
+    if (operator === '.' && state.currentInput.includes('.')) return;
     dispatch({
       payload: {
         value: operator,
       },
-      type: 'append',
+      type,
     });
   };
   return (
@@ -25,25 +26,100 @@ function Calculator() {
         <CalculatorBody>
           <CalculatorButton
             operator="1"
-            onClick={() => handleNumberAppend('1')}
+            type="append"
+            handleButtonPress={handleButtonPress}
           />
-          <CalculatorButton operator="2" />
-          <CalculatorButton operator="3" />
-          <CalculatorButton operator="4" />
-          <CalculatorButton operator="5" />
-          <CalculatorButton operator="6" />
-          <CalculatorButton operator="7" />
-          <CalculatorButton operator="8" />
-          <CalculatorButton operator="9" />
-          <CalculatorButton operator="." classHelper="dot" />
-          <CalculatorButton operator="0" />
-          <CalculatorButton operator="/" classHelper="divide" />
-          <CalculatorButton operator="del" />
-          <CalculatorButton operator="x" />
-          <CalculatorButton operator="+" classHelper="plus" />
-          <CalculatorButton operator="-" classHelper="minus" />
-          <CalculatorButton operator="reset" />
-          <CalculatorButton operator="=" classHelper="equal" />
+          <CalculatorButton
+            operator="2"
+            type="append"
+            handleButtonPress={handleButtonPress}
+          />
+          <CalculatorButton
+            operator="3"
+            type="append"
+            handleButtonPress={handleButtonPress}
+          />
+          <CalculatorButton
+            operator="4"
+            type="append"
+            handleButtonPress={handleButtonPress}
+          />
+          <CalculatorButton
+            operator="5"
+            type="append"
+            handleButtonPress={handleButtonPress}
+          />
+          <CalculatorButton
+            operator="6"
+            type="append"
+            handleButtonPress={handleButtonPress}
+          />
+          <CalculatorButton
+            operator="7"
+            type="append"
+            handleButtonPress={handleButtonPress}
+          />
+          <CalculatorButton
+            operator="8"
+            type="append"
+            handleButtonPress={handleButtonPress}
+          />
+          <CalculatorButton
+            operator="9"
+            type="append"
+            handleButtonPress={handleButtonPress}
+          />
+          <CalculatorButton
+            operator="."
+            classHelper="dot"
+            type="append"
+            handleButtonPress={handleButtonPress}
+          />
+          <CalculatorButton
+            operator="0"
+            type="append"
+            handleButtonPress={handleButtonPress}
+          />
+          <CalculatorButton
+            operator="/"
+            classHelper="divide"
+            type="function"
+            handleButtonPress={handleButtonPress}
+          />
+          <CalculatorButton
+            operator="del"
+            type="del"
+            handleButtonPress={handleButtonPress}
+          />
+          <CalculatorButton
+            operator="x"
+            classHelper="multiply"
+            type="function"
+            handleButtonPress={handleButtonPress}
+          />
+          <CalculatorButton
+            operator="+"
+            classHelper="plus"
+            type="function"
+            handleButtonPress={handleButtonPress}
+          />
+          <CalculatorButton
+            operator="-"
+            classHelper="minus"
+            type="function"
+            handleButtonPress={handleButtonPress}
+          />
+          <CalculatorButton
+            operator="reset"
+            type="reset"
+            handleButtonPress={handleButtonPress}
+          />
+          <CalculatorButton
+            operator="="
+            classHelper="equal"
+            type="equal"
+            handleButtonPress={handleButtonPress}
+          />
         </CalculatorBody>
       </div>
     </section>

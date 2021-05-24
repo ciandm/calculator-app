@@ -1,12 +1,12 @@
 import React from 'react';
 import './CalculatorButton.css';
 
-function CalculatorButton({ operator, classHelper, ...restProps }) {
+function CalculatorButton({ operator, type, classHelper, handleButtonPress }) {
   return (
     <button
       type="button"
       className={`button button--${classHelper || operator}`}
-      {...restProps}
+      onClick={() => handleButtonPress(operator, type)}
     >
       {operator}
     </button>
