@@ -10,3 +10,9 @@
   max-width: 540px;
   width: 100%;
 }
+
+@media screen and (max-width: 480px) {
+  .section {
+    padding: 28px 24px;
+  }
+}

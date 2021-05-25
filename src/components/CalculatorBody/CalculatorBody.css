@@ -13,3 +13,10 @@
   grid-template-rows: repeat(5, 64px);
   padding: 32px;
 }
+
+@media screen and (max-width: 480px) {
+  .body {
+    padding: 24px;
+    gap: 12px;
+  }
+}
